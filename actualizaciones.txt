@@ -1,0 +1,24 @@
+08/12/2021 1.1.1
+Se actualizaron las presencias
+cambiamos la configuracion y funcionamiento de el modulo musical
+errores leves
+textos
+
+20/09/2021 1.0.1 BETA
+Presencias terminadas y funcionando
+se importaron nuevos ajustes ala vercion oficial
+1.1.0 oficial
+es publicado la vercion
+3.- 20/09/2021 1.0.0
+Se añadio al comando botstat:
+  version del bot
+en los el comando help:
+  borre el la barra de redes
+Cambie la presencia del bot:
+  a) (aun no terminado): Nuevas presencias
+1.- 03/09/2021
+Actualice comandos, realice mejoras y añadi "-skip", cuyo próposito es saltar la cancion de la reproduccion de musica.
+Se encontro un bug en el -volume, el bug es que cuando se insertaba una letra, se silenciaba la musica....  corregido
+Se encontro un bug que puede tumbar el bot cuando se le manda un mensaje privado--- corregido
+El comando skip funciona correctamente
+Se añadio el nuevo comando botstats, este da informacion del bot, actualmente solo da los servidores conectados

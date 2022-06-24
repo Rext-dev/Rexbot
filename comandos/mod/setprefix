@@ -1,0 +1,25 @@
+Discord = require("discord.js");
+const client = new Discord.Client();
+const db = require("megadb")
+const setprefix = new db.crearDB("setprefix")
+const { Client, MessageEmbed } = require("discord.js");
+const fs = require('fs');
+module.exports = {
+
+  name: "setprefix",
+  alias: [],
+
+  execute(client, message, args) {
+    let permiso = message.member.hasPermission("MANAGE_MESSAGES");
+    if (!permiso) {
+      message.channel.send('Error, No tiene los permisos necesarios {MANAGE_MESSAGES}');
+    } else {
+      if(!args[0]) return message.channel.send("Debes de especificar el prefijo")
+      setprefix.establecer(message.guild.id,args[0]);
+      message.channel.send({content:`El prefix se ha cambiado a ${args[0]}.`})
+    }
+
+
+
+  }
+}
